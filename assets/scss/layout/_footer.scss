@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Yeseva+One&display=swap');
+
+// 字型
+$fontFamily_NotoSan:'Noto Sans TC', sans-serif;
+$fontFamily_Yeseva:'Yeseva One', cursive;
+// 顏色
+$color_030: #030303;
+$color_FBF: #FBFF22;
+$color_C96: #C96464;
+$color_878: #878787;
+// 字體大小
+$fontSize_18: 18px;
+$fontSize_16: 16px;
+$fontSize_14: 14px;
+
+
+
+// -----------------------------------------------------
+
+
+// footer start
+
+
+.footerWrap {  
+  padding: 32px 0;
+  border-top: 3px solid $color_030;
+}
+.footerText {
+  font-family: $fontFamily_NotoSan;
+  color: $color_030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+}
+
+@media (max-width: 767px) {
+  .footerText {
+    font-size: $fontSize_14 !important;
+  }
+}

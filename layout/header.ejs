@@ -1,0 +1,53 @@
+<header class="headerWrap">
+  <div class="container">
+    <nav class="nav">
+      <div class="navLeft">
+        <div class="logoWrap text-nowrap">
+          <h1>
+            <a href="index.html" class="logo">logo</a>
+          </h1>
+          <div class="logoTitle">
+            <p class="mb-0 fs-2 fs-2R">7TAO</p>
+            <p class="mb-0 fs-6 fs-6B">活動訂票網</p>
+          </div>
+        </div>
+        <div class="input-group">
+          <input type="search" placeholder="探索活動"
+          class="form-control fs-6R shadow-none
+          border-dark rounded-0 border-2">
+          <button class="btn btn-dark
+          rounded-0 border-2 border-dark
+          text-warning p-lg-3 p-2"
+          type="button">             
+            <i class="icofont-search-1 fs-19"></i>
+            </i>
+          </button>
+        </div>
+      </div>
+      <div class="navRight">
+        <ul class="register">
+          <li>
+            <i class="icofont-ui-file"></i>
+          </li>
+          <li><a href="#">REGISTER</a></li>
+        </ul>
+        <ul class="user">
+          <li>
+            <i class="icofont-ui-user"></i>
+          </li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </div>   
+      <div class="hamWrap">
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const hamWrap = document.querySelector('.hamWrap')
+  hamWrap.addEventListener('click', () => {
+    hamWrap.classList.toggle('close')
+  })
+</script>

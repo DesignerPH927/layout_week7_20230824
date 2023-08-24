@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&family=Yeseva+One&display=swap');
+
+// 字型
+$fontFamily_NotoSer:'Noto Serif TC', serif;
+$fontFamily_NotoSan:'Noto Sans TC', sans-serif;
+$fontFamily_Yeseva:'Yeseva One', cursive;
+// 顏色
+$color_FFF: #FFFFFF;
+$color_030: #030303;
+$color_FBF: #FBFF22;
+$color_C96: #C96464;
+$color_878: #878787;
+$color_000: #000000;
+$color_4F4: #4F4F4F;
+// 字體大小
+$fontSize_64: 64px;
+$fontSize_60: 60px;
+$fontSize_48: 48px;
+$fontSize_32: 32px;
+$fontSize_24: 24px;
+$fontSize_20: 20px;
+$fontSize_18: 18px;
+$fontSize_16: 16px;
+$fontSize_14: 14px;
+
+// ----------------------------------------------------
+
+// Event Title start
+
+.eventTitleWrap {
+  margin: 32px 0px;
+}
+// Event Title End
+
+// ----------------------------------------------------
+
+// tagsList start
+
+.tagsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.tagsMenuUp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: .5s ease;
+}
+.tagsMenuDown {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;  
+}
+.tagLink {
+  position: relative;
+  display: block;
+  border: 1px solid $color_000;
+  padding: 4px 23px 4px 20px;
+  font-size: $fontSize_16;
+  font-family: $fontFamily_NotoSer;
+  color: $color_000;
+  font-weight: bold;
+}
+.tagLink::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: $color_000;
+}
+
+// tagsList End
+
+// ----------------------------------------------------
+
+// eventList start
+
+.eventWrap {
+  margin-bottom: 60px;
+  transition: .5s ease;
+}
+
+// eventList End
+
+// ----------------------------------------------------
+
+// pagination start
+
+.paginationWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  transition: .5s ease;
+}
+.paginationMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+}
+.pgLink {
+  display: block;
+  border: 1px solid $color_000;
+  font-size: $fontSize_16;
+  font-family: $fontFamily_NotoSer;
+  font-weight: bold;
+  color: $color_030;
+  padding: 8px 15px 9px;
+}
+.pgLinkArrow {
+  padding-right: 11px;
+  padding-left: 11px;
+}
+.pgLink i {
+  font-size: $fontSize_18;
+}
+
+.pgLinkActive {
+  background: $color_030;
+  color: $color_FBF;
+}
+
+// pagination End
+
+// ----------------------------------------------------
+
+// Responsive
+
+@media (max-width: 992px) {
+  .tagsMenuUp {    
+    justify-content: flex-start;
+    gap: 8px;   
+  }
+  .tagLink {
+    font-size: $fontSize_14;
+    padding-left: 12px;
+    padding-right: 15px;
+  } 
+}
+
+@media (max-width: 767px) {
+  .eventTitleWrap {
+    margin-bottom: 16px;
+  }
+  .eventWrap {
+    margin-bottom: 32px;    
+  }
+  .paginationWrap {
+    margin-bottom: 48px;
+  }
+}
